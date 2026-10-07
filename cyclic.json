@@ -1,0 +1,18 @@
+{
+  "name": "Cyclic Rock Paper Scissors",
+  "rows": 60,
+  "cols": 60,
+  "edge": "wrap",
+  "neighborhood": "moore",
+  "radius": 1,
+  "states": [
+    {"name": "rock", "color": "firebrick"},
+    {"name": "paper", "color": "gold"},
+    {"name": "scissors", "color": "steelblue"}
+  ],
+  "rules": [
+    {"from": 0, "to": 1, "neighbor_state": 1, "min": 3},
+    {"from": 1, "to": 2, "neighbor_state": 2, "min": 3},
+    {"from": 2, "to": 0, "neighbor_state": 0, "min": 3}
+  ]
+}

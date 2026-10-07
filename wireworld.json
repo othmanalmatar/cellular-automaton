@@ -1,0 +1,19 @@
+{
+  "name": "Wireworld",
+  "rows": 30,
+  "cols": 40,
+  "edge": "dead",
+  "neighborhood": "moore",
+  "radius": 1,
+  "states": [
+    {"name": "empty", "color": "black"},
+    {"name": "electron head", "color": "deepskyblue"},
+    {"name": "electron tail", "color": "red"},
+    {"name": "conductor", "color": "gold"}
+  ],
+  "rules": [
+    {"from": 1, "to": 2},
+    {"from": 2, "to": 3},
+    {"from": 3, "to": 1, "neighbor_state": 1, "counts": [1, 2]}
+  ]
+}

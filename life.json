@@ -1,0 +1,17 @@
+{
+  "name": "Conway's Game of Life",
+  "rows": 40,
+  "cols": 40,
+  "edge": "dead",
+  "neighborhood": "moore",
+  "radius": 1,
+  "states": [
+    {"name": "dead", "color": "black"},
+    {"name": "alive", "color": "white"}
+  ],
+  "rules": [
+    {"from": 1, "to": 0, "neighbor_state": 1, "max": 1},
+    {"from": 1, "to": 0, "neighbor_state": 1, "min": 4},
+    {"from": 0, "to": 1, "neighbor_state": 1, "counts": [3]}
+  ]
+}

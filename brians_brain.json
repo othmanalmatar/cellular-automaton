@@ -1,0 +1,18 @@
+{
+  "name": "Brian's Brain",
+  "rows": 50,
+  "cols": 50,
+  "edge": "wrap",
+  "neighborhood": "moore",
+  "radius": 1,
+  "states": [
+    {"name": "off", "color": "black"},
+    {"name": "firing", "color": "white"},
+    {"name": "dying", "color": "royalblue"}
+  ],
+  "rules": [
+    {"from": 1, "to": 2},
+    {"from": 2, "to": 0},
+    {"from": 0, "to": 1, "neighbor_state": 1, "counts": [2]}
+  ]
+}
